@@ -1,0 +1,12 @@
+########## The Age Is Approximate ########## 
+
+Calculation Method :
+
+1- calcul the difference Between current Date And Date Of Birth (MilliSecond);
+2- convert Result to year by Devide 1000 / 60 / 60 / 24 / 365
+3- Get Numbers Of Days by calcul mod 365
+4- Get Months By Devide Numbers Of Days By 31
+5- Get The Remaining Days by calcul mod 31 (rest of division)
+
+########## Note ########## 
+This result is an approximation since not every month or year has 31 or 365 days respectively.

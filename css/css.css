@@ -1,0 +1,116 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Gajraj One', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #EEE;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.date-box{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px 6px 85px 6px;
+    width: 380px;
+}
+.date-box .date-input{
+    display: flex;
+    gap: 20px;
+}
+.date-box .date-input div{
+    display: flex;
+    flex-direction: column;
+    color: #959595;
+    transition: 0.3s;
+}
+.date-box .date-input div.invalid{
+    color: red;
+}
+.date-box .date-input p{
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+.date-box .date-input span{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    font-weight: 100;
+    transition: 0.3s;
+}
+.date-box .date-input input{
+    width: 80px;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #e3e3e3;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.date-box .date-input input:focus{
+    outline: none;
+    border: 1px solid rgba(134,76,255,255);
+}
+.date-box .date-input input::placeholder{
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: 0.3s;
+}
+.date-box .date-input input:focus::placeholder{
+    opacity: 0;
+}
+.date-box .date-input div.invalid input{
+    border-color: red;
+}
+
+.date-box .icon{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.date-box .icon::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: calc(100% - 65px);
+    background-color: #ececec;
+}
+.date-box .icon i{
+    padding: 17.3px 20px;
+    border-radius: 50%;
+    background-color: rgba(134,76,255,255);
+    color: white;
+    font-size: 1.4em;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.date-box .icon i:hover{
+    background-color: black;
+}
+.date-box .age p{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.date-box .age p span{
+    margin-right: 5px;
+    color: rgba(134,76,255,255);
+}
